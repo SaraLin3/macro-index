@@ -13,7 +13,7 @@ import plotly.express as px
 import plotly.graph_objs as go
 from dash import dcc
 from dash import html
-# 创建示例数据（替换成你的实际数据）
+# 
 data = pd.read_excel(r"D:\LJX\工作\4-东方固收\20223-10-10 GCI\副本各相关性指标和流动性.xlsx",index_col=0)
 data.replace(0, np.nan, inplace=True)
 data.ffill(inplace=True)
